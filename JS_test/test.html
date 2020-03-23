@@ -16,7 +16,8 @@
     //           contentType: "application/json",
                dataType: "json",
                success:function(result){
-                  $('#p1').html(resutl.number);
+                  $('#p1').html(result.number);
+                  $('#p2').html(result.timer_acc);
                }
             });
         });

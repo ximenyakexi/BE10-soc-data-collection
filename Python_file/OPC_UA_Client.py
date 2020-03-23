@@ -3,6 +3,7 @@ import time, logging, datetime, json
 from Python_file import app
 from flask import jsonify, request, render_template
 
+
 logging.basicConfig(filename="python_log.log", level=logging.ERROR)
 
 url = "opc.tcp://192.168.1.33:48010" #server url
@@ -52,7 +53,7 @@ def pull_soc():
 
         if status == "Failed":
             message = {'message':'failed to pull data from opcua server'}
-            logging.error("test position 111111111")
+            #logging.error("test position 111111111")
             return jsonify(message)
 
         try:
@@ -63,12 +64,12 @@ def pull_soc():
             timer_acc = timer_acc_node.get_value()
 
             message = {'number':number, 'timer_acc':timer_acc}
-            logging.error("test position 2222222222")
+            #logging.error("test position 2222222222")
 
         except:
             logging.error("Cannot get data from server at " + datetime.datetime.utcnow().strftime('%B %d %Y - %H:%M:%S'))
             message = {'message':'failed to pull data from opcua server'}
-            logging.error("test position 333333333")
+            #logging.error("test position 333333333")
 
         finally:
             client.disconnect()

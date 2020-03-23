@@ -47,3 +47,34 @@ INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 14:34:06] "[37mGET / HTTP/1.1[0m" 200
 ERROR:root:Get a request from javascript
 ERROR:root:test position 2222222222
 INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 14:34:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:09:46] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:10:17] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:10:29] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:14:48] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:14:49] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:14:50] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:26:07] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:26:08] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:26:08] "[37mGET / HTTP/1.1[0m" 200 -
+ERROR:root:Get a request from javascript
+ERROR:root:test position 2222222222
+INFO:werkzeug:127.0.0.1 - - [23/Mar/2020 15:26:09] "[37mGET / HTTP/1.1[0m" 200 -
