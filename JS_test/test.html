@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#b1").click(function(){
+    //        var request = {"requested":"True"};
+    //        var requestAsJSON = JSON.stringify(request);
+
+            $.ajax({
+               url: "http://127.0.0.1:5000/",
+               type: "GET",
+    //           data: requestAsJSON,
+    //           contentType: "application/json",
+               dataType: "json",
+               success:function(result){
+                  $('#p1').html(resutl.number);
+               }
+            });
+        });
+    });
+    </script>
+
+        <button id="b1">Pull data</button>
+        <p id="p1">Number</p>
+        <p id="p2">Timer-ACC</p>
+
+    </body>
+</html>

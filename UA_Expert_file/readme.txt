@@ -1,0 +1,1 @@
+UA expert is a tool to display node and variable name from Indusoft OPC UA server. It's not included in deployment.
