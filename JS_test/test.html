@@ -6,16 +6,22 @@
     <script>
     $(document).ready(function(){
         $("#b1").click(function(){
-    //        var request = {"requested":"True"};
-    //        var requestAsJSON = JSON.stringify(request);
-
+            var request = {"requestSOC":"True"};
             $.ajax({
                url: "http://127.0.0.1:5000/",
-               type: "GET",
-    //           data: requestAsJSON,
-    //           contentType: "application/json",
+               type: "POST",
+               data: JSON.stringify(request),
+               contentType: "application/json; charset=utf-8",
                dataType: "json",
+               error: function(xhr, status, error){
+                   console.log(error);
+                   var errorMessage = xhr.status + ': ' + xhr.statusText
+                   alert ('Error - ' + errorMessage)
+               },
                success:function(result){
+                  if (result.message) {
+                      $('#p1').html(result.number);
+                  }
                   $('#p1').html(result.number);
                   $('#p2').html(result.timer_acc);
                }
@@ -25,6 +31,7 @@
     </script>
 
         <button id="b1">Pull data</button>
+        <p id="p0"></p>
         <p id="p1">Number</p>
         <p id="p2">Timer-ACC</p>
 
