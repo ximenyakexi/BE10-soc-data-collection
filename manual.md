@@ -3,4 +3,4 @@
 ## **Step 1.**
 On your android apps screen, click ***SDPEncryptor*** icon.
 
-![](photos/1.png)
+![](.\photos\1.PNG)
